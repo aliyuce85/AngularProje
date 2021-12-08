@@ -1,18 +1,26 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UrunlerComponent } from './pages/Urunler/urunler.component';
+import { UrunlerService } from './services/urunler.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UrunlerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [UrunlerService],
+  bootstrap: [AppComponent,UrunlerComponent]
+  
 })
 export class AppModule { }

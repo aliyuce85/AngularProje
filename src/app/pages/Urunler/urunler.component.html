@@ -1,0 +1,58 @@
+<h3>Hesap Makinesddi</h3>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="firstValueInput">1. Değer</label>
+        <input [(ngModel)]="ilkDeger"  style="margin-left: 5px;" id="firstValueInput" type="text">
+    </div>
+    <br>
+    
+    <div class="col-md-3" >
+        <label for="secondValueInput">2. Değer</label>
+        <input [(ngModel)]="ikinciDeger" style="margin-left: 5px;" type="text" id="secondValueInput">
+    </div>
+    <div class="col-md-1" >
+        <p>
+            Sonuç: {{sonuc}}
+        </p>
+    </div>
+  
+    
+</div>
+<div class="row" style="margin-top: 15px;">
+<div class="col-md-12" style="margin-top: 10px;">
+<button  (click)="topla()"> Toplama Yap</button>
+</div>
+<div class="col-md-12" style="margin-top: 10px;">
+    <button (click)="cikar()">Çıkarma Yap</button>
+
+</div>
+<div class="col-md-12" style="margin-top: 10px;">
+    <button (click)="bolme()">Bölme Yap</button>
+
+</div>
+<div class="col-md-12" style="margin-top: 10px;">
+    <button (click)="carpma()">Çarpma Yap</button>
+
+</div>
+</div>
+<div class="row">
+    <h5>ÜRÜNLER</h5>
+ 
+    <div class="card" *ngFor="let post of urunlerList">
+        <div class="card-header">
+          {{post.name}} 
+        </div>
+        <div class="card-body">
+          <p class="card-text"> {{post.aciklama}} </p>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
