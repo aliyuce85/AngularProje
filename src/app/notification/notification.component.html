@@ -1,0 +1,15 @@
+<div class="ntf" >
+    <div *ngFor="let notification of notificationService.notifications$ | async">
+        <div class="ntf__box">
+            <div class="ntf__title">
+                {{notification.title}}
+            </div>
+            <div class="ntf__message">
+                {{notification.message}}
+            </div>
+        </div>
+    </div>
+   
+</div>
+<h4>notification</h4>
+

@@ -6,11 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UrunlerComponent } from './pages/Urunler/urunler.component';
 import { UrunlerService } from './services/urunler.service';
+import { NotificationComponent } from './notification/notification.component';
+import { NotificationService } from './services/notification.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UrunlerComponent
+    UrunlerComponent,
+    NotificationComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,7 @@ import { UrunlerService } from './services/urunler.service';
     HttpClientModule
 
   ],
-  providers: [UrunlerService],
+  providers: [UrunlerService,NotificationService],
   bootstrap: [AppComponent,UrunlerComponent]
   
 })

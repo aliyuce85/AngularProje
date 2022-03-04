@@ -1,0 +1,17 @@
+.ntf {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+  
+
+    &__box {
+        background-color: aquamarine;
+        padding: 2rem;
+        border: radius 1rem;
+    }
+
+    & p {
+        color: white;
+    }
+}

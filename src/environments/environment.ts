@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  
+  notificationApiUrl:"http://localhost:46800/"
+
 };
 
 /*
